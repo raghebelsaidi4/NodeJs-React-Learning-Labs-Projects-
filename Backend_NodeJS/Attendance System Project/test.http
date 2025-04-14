@@ -1,0 +1,63 @@
+###
+POST localhost:4000/api/v1/auth/register
+Content-Type: application/json
+
+{
+  "name": "Ragheb",
+  "email": "ragheb@gmail.com",
+  "password": "1234"
+}
+###
+
+###
+POST localhost:4000/api/v1/users
+#Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpX
+Content-Type: application/json
+
+{
+  "name": "Faruk",
+  "email": "faruk@gmail.com",
+  "password": "0034",
+  "roles": ["ADMIN", "STUDENT"],
+  "accountStatus": "ACTIVE"
+}
+###
+
+###
+DELETE localhost:4000/api/v1/users/67da51270bfc68c87949cece
+###
+
+###
+POST localhost:4000/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "email": "ragheb@gmail.com",
+  "password": "1234"
+}
+###
+
+###
+GET localhost:4000/api/v1/admin/attendance/enable
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2RhNTEyNzBiZmM2OGM4Nzk0OWNlY2UiLCJuYW1lIjoiUmFnaGViIiwiZW1haWwiOiJyYWdoZWJAZ21haWwuY29tIiwicm9sZXMiOlsiU1RVREVOVCJdLCJhY2NvdW50U3RhdHVzIjoiUEVORElORyIsImlhdCI6MTc0MjM2MjQ5NiwiZXhwIjoxNzQyMzY5Njk2fQ.mvsAnjIIUom7yVYUkxXRdfSzHkh4vVAkh1XL9Qbmbf4
+###
+
+###
+GET localhost:4000/api/v1/admin/attendance/status
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2RhNTEyNzBiZmM2OGM4Nzk0OWNlY2UiLCJuYW1lIjoiUmFnaGViIiwiZW1haWwiOiJyYWdoZWJAZ21haWwuY29tIiwicm9sZXMiOlsiU1RVREVOVCJdLCJhY2NvdW50U3RhdHVzIjoiUEVORElORyIsImlhdCI6MTc0MjM2MjQ5NiwiZXhwIjoxNzQyMzY5Njk2fQ.mvsAnjIIUom7yVYUkxXRdfSzHkh4vVAkh1XL9Qbmbf4
+###
+
+###
+GET localhost:4000/api/v1/admin/attendance/disable
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2RhNTEyNzBiZmM2OGM4Nzk0OWNlY2UiLCJuYW1lIjoiUmFnaGViIiwiZW1haWwiOiJyYWdoZWJAZ21haWwuY29tIiwicm9sZXMiOlsiU1RVREVOVCJdLCJhY2NvdW50U3RhdHVzIjoiUEVORElORyIsImlhdCI6MTc0MjM2MjQ5NiwiZXhwIjoxNzQyMzY5Njk2fQ.mvsAnjIIUom7yVYUkxXRdfSzHkh4vVAkh1XL9Qbmbf4
+###
+
+###
+GET localhost:4000/api/v1/student/attendance/status
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2RhNTEyNzBiZmM2OGM4Nzk0OWNlY2UiLCJuYW1lIjoiUmFnaGViIiwiZW1haWwiOiJyYWdoZWJAZ21haWwuY29tIiwicm9sZXMiOlsiU1RVREVOVCJdLCJhY2NvdW50U3RhdHVzIjoiUEVORElORyIsImlhdCI6MTc0MjM2MjQ5NiwiZXhwIjoxNzQyMzY5Njk2fQ.mvsAnjIIUom7yVYUkxXRdfSzHkh4vVAkh1XL9Qbmbf4
+###
+
+###
+GET localhost:4000/api/v1/student/attendance/6774154f14594035ebc0d254
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2RhNTEyNzBiZmM2OGM4Nzk0OWNlY2UiLCJuYW1lIjoiUmFnaGViIiwiZW1haWwiOiJyYWdoZWJAZ21haWwuY29tIiwicm9sZXMiOlsiU1RVREVOVCJdLCJhY2NvdW50U3RhdHVzIjoiUEVORElORyIsImlhdCI6MTc0MjM2MjQ5NiwiZXhwIjoxNzQyMzY5Njk2fQ.mvsAnjIIUom7yVYUkxXRdfSzHkh4vVAkh1XL9Qbmbf4
+###
